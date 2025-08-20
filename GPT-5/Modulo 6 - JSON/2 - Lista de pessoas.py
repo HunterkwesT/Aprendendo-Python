@@ -4,9 +4,11 @@ lista = []
 for i in range(2):
     pessoa = {}
     pessoa["nome"] = input("Nome: ").strip()
-    pessoa["idade"] = int(input("Idade: "))
+    pessoa["idade"] = abs(int(input("Idade: ")))
 
     lista.append(pessoa)
+
+lista = sorted(lista, key=lambda pessoa: pessoa["nome"])
 
 with open("Modulo 6 - exercicio 2.json", "w", encoding="utf-8") as arquivo:
     json.dump(lista, arquivo, ensure_ascii=False, indent=2)
