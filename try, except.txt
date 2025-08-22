@@ -1,0 +1,16 @@
+Exceção	            Quando acontece	                        Exemplo que gera
+ValueError	        Valor inválido para a operação	        int("abc")
+ZeroDivisionError	Divisão por zero	                    10 / 0
+TypeError	        Tipos incompatíveis	                    "a" + 1
+IndexError	        Índice fora do alcance em lista/tupla	[1, 2, 3][5]
+KeyError	        Chave inexistente em dicionário	        {"nome": "Ana"}["idade"]
+FileNotFoundError	Arquivo não encontrado	                open("x.txt")
+PermissionError	    Sem permissão de acesso	                tentar abrir arquivo protegido
+AttributeError	    Atributo ou método inexistente	        (10).append(5)
+ModuleNotFoundError	Módulo não encontrado na importação	    import nao_existe
+ImportError	        Erro ao importar algo específico	    from math import nada
+NameError	        Variável não declarada usada	        print(x) sem definir x
+IndentationError	Problema de identação	                usar tab/space errado
+SyntaxError	        Código escrito errado (sintaxe)	        if True print("oi")
+RuntimeError	    Erro genérico em tempo de execução	    chamado em várias libs
+Exception	        Classe base de todas as exceções	    pode capturar qualquer erro
