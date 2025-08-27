@@ -1,6 +1,6 @@
 def soma(a,b):
-    soma = a + b
-    return soma
+    return a + b
+    
 
 num1 = int(input(f"Numero 1: "))
 num2 = int(input(f"Numero 2: "))
